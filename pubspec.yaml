@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +19,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets\fonts\Nunito-Bold.ttf
+        - asset: assets\fonts\Nunito-Medium.ttf
+        - asset: assets\fonts\Nunito-Regular.ttf
+        - asset: assets\fonts\Nunito-SemiBold.ttf
