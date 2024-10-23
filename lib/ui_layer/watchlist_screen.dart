@@ -284,20 +284,24 @@ class _WatchlistScreenState extends State<WatchlistScreen>
                       color: Colors.white70,
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10, right: 5),
-                    child: Icon(
-                      Icons.business_center_outlined,
-                      size: 14,
-                      color: Colors.white70,
-                    ),
-                  ),
-                  Text(
-                    stockCode,
-                    style: const TextStyle(
-                      color: Colors.white70,
-                    ),
-                  ),
+                  Visibility(
+                      visible: stockCode != "0",
+                      child: const Padding(
+                        padding: EdgeInsets.only(left: 10, right: 5),
+                        child: Icon(
+                          Icons.business_center_outlined,
+                          size: 14,
+                          color: Colors.white70,
+                        ),
+                      )),
+                  Visibility(
+                      visible: stockCode != "0",
+                      child: Text(
+                        stockCode,
+                        style: const TextStyle(
+                          color: Colors.white70,
+                        ),
+                      )),
                 ],
               ),
             ],
